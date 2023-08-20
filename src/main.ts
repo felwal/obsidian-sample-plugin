@@ -8,7 +8,7 @@ export default class SamplePluginPlugin extends Plugin {
     console.log("loading plugin");
 
     await this.loadSettings();
-		this.loadCommands();
+    this.loadCommands();
     this.loadRibbon();
 
     this.addSettingTab(new SampleSettingTab(this.app, this));
@@ -27,7 +27,7 @@ export default class SamplePluginPlugin extends Plugin {
     await this.saveData(this.settings);
   }
 
-	loadCommands() {
+  loadCommands() {
   }
 
   loadRibbon() {
